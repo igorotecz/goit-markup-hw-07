@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     <header class="header"> 
@@ -303,39 +303,39 @@
     </main>
     <footer class="page-footer">
     <div class="container footer-container"> 
-         <div class="contact-footer">
-            <a class="logo-web" href="./index.html"><span class="web-footer">Web</span>Studio</a>
-            <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-                <ul class="contact-section">
-                    <li class="contact-footer-item"><a class="contact-section-link" href="mailto:info@deskstudio.com">info@deskstudio.com</a> </li>
-                    <li class="contact-footer-item"><a class="contact-section-link" href="tel:+380961111111">+380961111111</a></li>
+         <div class="footer-contact">
+            <a class="page-footer__logo" href="./index.html"><span class="page-footer__web">Web</span>Studio</a>
+            <address class="page-footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+                <ul class="page-footer__contact">
+                    <li class="page-footer__item"><a class="page-footer__link" href="mailto:info@deskstudio.com">info@deskstudio.com</a> </li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="tel:+380961111111">+380961111111</a></li>
                 </ul>
          </div>
-          <div class="footer-soc-net">
+          <div class="footer-socnet">
             <h3 class="propose">ПРИСОЕДИНЯЙТЕСЬ</h3>
-            <ul class="social-icons-footer">
-                <li class="social-icon-footer">
+            <ul class="footer-socnet__icons">
+                <li class="footer-socnet__icon">
                     <a href="" class="social-net-footer">
                         <svg width="20px" height="20px">
                             <use href="./imagescvg/sprite.svg#instagram"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-icon-footer">
+                <li class="footer-socnet__icon">
                     <a href="" class="social-net-footer">
                         <svg width="20px" height="20px">
                             <use href="./imagescvg/sprite.svg#twiter"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-icon-footer">
+                <li class="footer-socnet__icon">
                     <a href="" class="social-net-footer">
                         <svg width="20px" height="20px">
                             <use href="./imagescvg/sprite.svg#facebook"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="social-icon-footer">
+                <li class="footer-socnet__icon">
                     <a href="" class="social-net-footer">
                         <svg width="20px" height="20px">
                             <use href="./imagescvg/sprite.svg#linkedin"></use>
@@ -346,10 +346,10 @@
           </div>
             <div class="footer-mailing">
                 <h3 class="propose">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-                <div class="footer-form">
+                <div class="footer-mailing__form">
                     <label for="mail"></label>
                     <input type="email" name="mail" id="mail" placeholder="E-mail" />
-                    <button class="subscribe" >Подписаться<svg class="footer-svg" width="24px" height="24px">
+                    <button class="footer-mailing__subscribe" >Подписаться<svg class="footer-mailing__svg" width="24px" height="24px">
                         <use href="./imagescvg2/sprite2.svg#icon-icon-send"></use>
                     </svg></button>
                 </div>
@@ -364,34 +364,34 @@
      <div class="modal">
          <form>
             <button class="modal-close">
-                <svg class="modal-close-button">
+                <svg class="modal-close__button">
                     <use href='./imagescvg2/sprite2.svg#icon-close-1'></use></svg>
             </button>
-            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+            <h3 class="modal__title">Оставьте свои данные, мы вам перезвоним</h3>
             
-                <label class="form-field" for="name">Имя<input class="modal-input" type="text" name="name" id="name" />
-                    <svg class="modal-icon"><use href='./imagescvg2/sprite2.svg#icon-person-black-18dp-1'></use></svg>
+                <label class="form-field" for="name">Имя<input class="form-field__input" type="text" name="name" id="name" />
+                    <svg class="form-field__icon"><use href='./imagescvg2/sprite2.svg#icon-person-black-18dp-1'></use></svg>
                 </label>
                       
-                <label class="form-field" for="tel">Телефон<input class="modal-input" type="tel" name="tel" id="tel" />
-                    <svg class="modal-icon"><use href='./imagescvg2/sprite2.svg#icon-phone-black-18dp-1'></use></svg>
+                <label class="form-field" for="tel">Телефон<input class="form-field__input" type="tel" name="tel" id="tel" />
+                    <svg class="form-field__icon"><use href='./imagescvg2/sprite2.svg#icon-phone-black-18dp-1'></use></svg>
                 
                 </label>
                       
-                <label class="form-field" for="mail-to">Почта<input class="modal-input" type="email" name="mail" id="mail-to" />
-                    <svg class="modal-icon"><use href='./imagescvg2/sprite2.svg#icon-email-black-18dp-1'></use></svg>
+                <label class="form-field" for="mail-to">Почта<input class="form-field__input" type="email" name="mail" id="mail-to" />
+                    <svg class="form-field__icon"><use href='./imagescvg2/sprite2.svg#icon-email-black-18dp-1'></use></svg>
                 
                 </label>
                            
                 <label class="form-field" for="comment">Комментарий
-                <textarea class="modal-form-massage" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                <textarea class="modal-form__massage" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
                 </label>
                        
                 <label class="modal-checkbox">
-                    <input class="checkbox" type="checkbox" name="policy">
-                    <span class="checkbox-icon"></span>
+                    <input class="modal-checkbox__input" type="checkbox" name="policy">
+                    <span class="modal-checkbox__icon"></span>
                     Соглашаюсь с рассылкой и принимаю
-                    <a class="checkbox-contract" href="">Условия договора</a>
+                    <a class="modal-checkbox__contract" href="">Условия договора</a>
                 </label>
 
             <button class="modal-submit" type="submit">Отправить</button>
