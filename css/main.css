@@ -10,11 +10,12 @@
 
 body {
   font-family: Roboto, sant-serif;
-  --color: #212121;
-  --color-text: #757575;
+  --card-set-gup: 30px;
+
+  /* --color-text: #757575;
   --background-color: #ffffff;
   --secondary-color: #2196f3;
-  --card-set-gup: 30px;
+  --color: #212121;*/
 }
 ul {
   list-style: none;
