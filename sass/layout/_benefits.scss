@@ -5,11 +5,11 @@
   display: flex;
 }
 
-.benefits-topic__item:not(:last-child) {
-  margin-right: 30px;
-}
 .benefits-topic__item {
   width: 270px;
+  &:not(:last-child) {
+    @extend %margin-primary;
+  }
 }
 .benefits-topic__item::before {
   content: "";
